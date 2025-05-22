@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 18px 40px;
-  background: rgba(43, 39, 39, 0.6);
+  background: rgba(234, 210, 139, 0.6);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -12,7 +12,7 @@
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: bold;
   color: orangered;
 }
@@ -26,12 +26,13 @@
 .nav-links li a {
   text-decoration: none;
   font-weight: 500;
-  color: white;
+  font-size:medium;
+  color: rgb(85, 68, 68);
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #ffcc00;
+  color: #6d3507;
 }
 
 /* Link Buttons on Right Side */
@@ -52,6 +53,6 @@
 }
 
 .nav-auth-links a:hover {
-  background-color: #f86b07;
+  background-color: #fd8122;
   transform: scale(1.05);
 }

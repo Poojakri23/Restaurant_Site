@@ -12,7 +12,7 @@ const About = () => {
           />
         </div>
         <div className="about-content">
-          <h2>About Spicynest</h2>
+          <h2>About 🍹SpicyNest🔥</h2>
           <p>
             Welcome to Spicynest – your ultimate food destination! We bring the finest
             traditional and contemporary flavors together in one place. Whether you're

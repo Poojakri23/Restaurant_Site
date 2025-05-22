@@ -27,7 +27,7 @@ const Menu = () => {
 
   return (
     <section className="menu-section" id="menu">
-      <h2 className="menu-title">Our Menu</h2>
+      <h2 className="menu-title">Our Menu📋</h2>
 
        {/* ✅ Image-Based Category Buttons */}
       <div className="category-container">
@@ -59,7 +59,7 @@ const Menu = () => {
                 <ReviewSection reviews={dish.reviews} dishId={dish._id} />
               </div>
             ))
-          : <p className="select-category-msg">Select a category to view dishes</p>}
+          : <p className="select-category-msg">Select a category🍽️to view dishes🧂</p>}
       </div>
     </section>
   );

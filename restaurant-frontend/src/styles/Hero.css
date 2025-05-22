@@ -1,6 +1,6 @@
 .hero-section {
   height: 100vh;
-  background-image: url('https://plus.unsplash.com/premium_photo-1689596509741-f275e7f4b287?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D');
+  background-image: url('https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=600https://images.pexels.com/photos/585752/pexels-photo-585752.jpeg?auto=compress&cs=tinysrgb&w=600');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,52 +8,62 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
   position: relative;
+  color: white;
+  overflow: hidden;
 }
 
 .hero-section::after {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 700px;
-  padding: 20px;
+  max-width: 800px;
+  padding: 30px;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 3.1rem;
   font-weight: bold;
   margin-bottom: 15px;
-  text-shadow: 2px 2px 4px #ffae3c;
+  color: #dcd2c3;
+  text-shadow: 1px 1px 4px #dc7d09;;
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 30px;
-  text-shadow: 1px 1px 3px #ee7373;
+  color: #f5f2ed;
+  text-shadow: 1px 1px 4px #dc7d09;
 }
 
 .hero-button {
-  padding: 12px 30px;
-  font-size: 1rem;
+  padding: 14px 34px;
+  font-size: 1.1rem;
   font-weight: bold;
-  background-color: orangered ;
+  background-color: orangered;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   color: white;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 5px 15px rgba(255, 87, 34, 0.5);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255, 87, 34, 0.6);
 }
 
 .hero-button:hover {
-  background-color: #e64a19;
-  transform: scale(1.05);
+  transform: scale(1.08);
+  background: linear-gradient(45deg, #ff8a65, #d84315);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
 }

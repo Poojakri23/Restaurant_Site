@@ -5,8 +5,8 @@ const Contact = () => {
   return (
     <section className="contact-section" id="contact">
       <div className="contact-container">
-        <h2>Contact & Feedback</h2>
-        <p>We'd love to hear from you! Drop us a message 👇</p>
+        <h2>📞Contact & 💬Feedback</h2>
+        <p>We'd love❤️  to hear from you! Drop us a message 👇</p>
         <form className="contact-form">
           <input type="text" placeholder="Your Name" required />
           <input type="email" placeholder="Your Email" required />

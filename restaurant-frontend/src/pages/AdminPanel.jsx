@@ -81,6 +81,7 @@ const AdminPanel = () => {
           <option value="Deserts">Deserts</option>
           <option value="MainCourse">MainCourse</option>
           <option value="Veg-Special">Veg-Special</option>
+          <option value="Fastfood">Fastfood</option>
           <option value="Non-Veg">Non-Veg</option>
         </select>
 
