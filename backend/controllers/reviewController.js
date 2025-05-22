@@ -1,7 +1,8 @@
-import  Review from "../models/Review.js" ;
+import Dish from "../models/Dish.js" ;
 
 // POST /api/dishes/:id/reviews
 export const createDishReview = async (req, res) => {
+  
   const { rating, comment } = req.body;
 
   try {

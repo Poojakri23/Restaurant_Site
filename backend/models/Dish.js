@@ -6,7 +6,7 @@ import mongoose from "mongoose";
       required: true,
     },
    image: {
-     type: String, // ✅ Accepts both URLs & local paths
+     type: String, 
      required: true,
     },
     price: {

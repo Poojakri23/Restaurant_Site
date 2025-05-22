@@ -4,7 +4,7 @@ import "../styles/Menu.css";
 const handleReviewSubmit = async (e, dishId) => {
   e.preventDefault();
   const form = e.target;
-  const name = form.name.value;
+  // const name = form.name.value;
   const rating = form.rating.value;
   const comment = form.comment.value;
 
@@ -15,6 +15,7 @@ const handleReviewSubmit = async (e, dishId) => {
 
   try {
     await addReview(dishId, { rating, comment });
+    console.log(dishId)
     alert("✅ Review submitted!");
     form.reset();
   } catch (err) {
