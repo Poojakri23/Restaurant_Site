@@ -1,0 +1,38 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.register-form {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+.register-form input,
+.register-form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.register-form button {
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

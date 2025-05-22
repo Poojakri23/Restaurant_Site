@@ -1,0 +1,176 @@
+.menu-section {
+  background: linear-gradient(to right, #e9bf6b, #fff0e6);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 2.8rem;
+  color: #ff5722;
+  margin-bottom: 50px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  animation: fadeInUp 0.5s ease-in;
+
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 220px; /* Increased height */
+  object-fit: cover;
+  border-bottom: 4px solid #ffa500;
+ /* Optional: adds stylish separation */
+}
+
+
+.menu-info {
+  padding: 10px 12px;
+  background: linear-gradient(to right, #f1a308, Lightyellow);
+  border-radius: 10px;
+}
+
+
+.menu-info h3 {
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+  color: #e7550c;
+  font-weight: bold;
+}
+
+
+.menu-info p {
+  color: #ff5722;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.menu-info h4{
+  color: #ff5722;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* ✅ Centering Category Section */
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* ✅ Image-Based Category Buttons */
+.category-btn {
+  width: 120px;
+  height: 120px;
+  border: none;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+/* ✅ Category Name Overlay */
+.category-name {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* ✅ Hover Effects */
+.category-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Active Category Highlight */
+.active {
+  border: 3px solid #ff6a00;
+  box-shadow: 0px 4px 10px rgba(255, 106, 0, 0.5);
+}
+
+/* ✅ Review Section */
+.reviews {
+  margin-top: 8px;
+  padding: 6px;
+  background-color: #ff8317;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review {
+  background: #e3b24f;
+  padding: 6px;
+  margin: 4px 0;
+  border-left: 3px solid #ffc107;
+  border-radius: 4px;
+  font-size: 13px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.review:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.review-form {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  background: #fff3d4;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.review-form button {
+  padding: 6px;
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.review-form button:hover {
+  background-color: #e55a00;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

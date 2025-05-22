@@ -1,0 +1,54 @@
+.contact-section {
+  background-image: url('https://images.pexels.com/photos/3184192/pexels-photo-3184192.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  color: #ffcc70;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #eee;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #ff5722;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e64a19;
+}

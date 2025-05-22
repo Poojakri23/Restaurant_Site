@@ -1,0 +1,53 @@
+.footer {
+  background-image: url('https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  position: relative;
+  color: white;
+}
+
+.footer-overlay {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 2rem;
+  color: #ffcc70;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  color: #ddd;
+  margin: 10px 0;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffcc70;
+}
+
+.copy {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  color: #aaa;
+}
