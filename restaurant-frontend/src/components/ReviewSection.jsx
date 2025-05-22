@@ -4,17 +4,17 @@ import "../styles/Menu.css";
 const handleReviewSubmit = async (e, dishId) => {
   e.preventDefault();
   const form = e.target;
-  const name = form.name.value.trim();
+  const name = form.name.value;
   const rating = form.rating.value;
-  const comment = form.comment.value.trim();
+  const comment = form.comment.value;
 
-  if (!name || !comment) {
+  if (!comment) {
     alert("Please fill in all fields.");
     return;
   }
 
   try {
-    await addReview(dishId, { name, rating, comment });
+    await addReview(dishId, { rating, comment });
     alert("✅ Review submitted!");
     form.reset();
   } catch (err) {
@@ -30,7 +30,7 @@ const ReviewSection = ({ reviews, dishId }) => {
       {reviews?.length > 0 ? (
         reviews.map((review, i) => (
           <div key={i} className="review">
-            <strong>{review.name}</strong> - {review.rating}⭐
+             {review.rating}⭐
             <p>{review.comment}</p>
           </div>
         ))
@@ -40,16 +40,16 @@ const ReviewSection = ({ reviews, dishId }) => {
 
       {/* ✅ Review Form */}
       <form className="review-form" onSubmit={(e) => handleReviewSubmit(e, dishId)}>
-        <select name="⭐" defaultValue="5">
-          <option value="5">⭐⭐⭐⭐⭐</option>
-          <option value="4">⭐⭐⭐⭐</option>
-          <option value="3">⭐⭐⭐</option>
-          <option value="2">⭐⭐</option>
-          <option value="1">⭐</option>
-        </select>
-        <textarea name="comment" placeholder="Your comment" required></textarea>
-        <button type="submit">Submit Review</button>
-      </form>
+  <select name="rating" defaultValue="5">
+    <option value="5">⭐⭐⭐⭐⭐</option>
+    <option value="4">⭐⭐⭐⭐</option>
+    <option value="3">⭐⭐⭐</option>
+    <option value="2">⭐⭐</option>
+    <option value="1">⭐</option>
+  </select>
+  <textarea name="comment" placeholder="Your comment" required></textarea>
+  <button type="submit">Submit Review</button>
+</form>
     </div>
   );
 };

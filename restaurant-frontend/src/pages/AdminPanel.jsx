@@ -42,19 +42,12 @@ const AdminPanel = () => {
     e.preventDefault();
 
     try {
-      const formData = {
-        name: newDish.name,
-        category: newDish.category,
-        description: newDish.description,
-        price: newDish.price,
-        image:newDish.image, // ✅ Valid image path (URL or local)
-      };
 
-      await createDish(formData);
+      await createDish(newDish);
       alert("✅ Dish added successfully!");
       setNewDish({ name: "", category: "", description: "", price: "", image: "" });
-
       fetchDishes();
+
     } catch (err) {
       console.error("❌ Error adding dish:", err);
       alert("Failed to add dish.");
@@ -93,19 +86,7 @@ const AdminPanel = () => {
 
         <input name="price" type="number" placeholder="Price" value={newDish.price} onChange={handleChange} required />
 
-       {/* ✅ Image Input (Opens file explorer to select image) */}
-       <input
-         type="file"
-          accept="image/*"
-          onChange={(e) => {
-          const file = e.target.files[0];
-          if (file) {
-             const imageUrl = URL.createObjectURL(file); // creates a temporary local image URL
-            setNewDish({ ...newDish, image: imageUrl });
-               }
-             }}
-       />
-
+       <input name="image" placeholder="Image URL" value={newDish.image} onChange={handleChange}  required />
 
         <button type="submit">Add Dish</button>
       </form>
