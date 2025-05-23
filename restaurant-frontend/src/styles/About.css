@@ -28,6 +28,7 @@
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #ff5722;
+  text-shadow: 1px 1px 4px #dc7d09;
 }
 
 .about-content p {
@@ -35,4 +36,5 @@
   line-height: 1.7;
   color: #444;
   margin-bottom: 15px;
+  text-shadow: 1px 1px 4px #9a7006;
 }

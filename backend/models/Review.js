@@ -1,4 +1,4 @@
- const mongoose = require("mongoose");
+ import mongoose from "mongoose";
  const reviewSchema = new mongoose.Schema({
  dish: { type: mongoose.Schema.Types.ObjectId, ref: "Dish" },
  user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
